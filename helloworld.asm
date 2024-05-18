@@ -1,5 +1,8 @@
-;Simple program
-;Return : Hello World
+; Simple program
+; A simple script that returns "Hello World" written in ASM x86
+; To compile, do:
+; nasm -f elf64 helloworld.asm
+; ld -s -o helloworld helloworld.o
 
 section .data
 	msg: db "Hello world!"
