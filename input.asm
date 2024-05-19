@@ -1,3 +1,9 @@
+; Simple code made in ASM x86 intel
+; it captures the user's input and then prints it on the screen!
+; to compile, simply:
+; nasm -f elf64 input.asm
+; ld -s -o input input.asm
+
 section .data
 msg db "Enter the name : "
 size equ $-msg
