@@ -9,7 +9,7 @@ msg db "Enter the name : "
 size equ $-msg
 
 section .bss
-name resb 1
+name resb 12
 
 section .text
 global _start
