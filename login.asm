@@ -1,3 +1,8 @@
+; A login system made on ASM x86 intel
+; Compile and link with:
+; nasm -f elf64 -o login.asm
+; ld -s -o login login.asm
+
 section .data
 insert db "Enter password : "
 size1 equ $-insert
@@ -33,10 +38,10 @@ int 0x80
 mov EAX, [password]
 mov EBX, [password_input]
 cmp EAX, EBX
-je igual
+je equal
 jmp failed
 
-igual:
+equal:
 mov EAX, 0x4
 mov EBX, 0x1
 mov ECX, granted
