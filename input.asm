@@ -22,7 +22,7 @@ mov EDX, size
 int 0x80
 
 mov EAX, 0x3
-mov EBX, 0X0
+mov EBX, 0x0
 mov ECX, name
 mov EDX, 0x8
 int 0x80
