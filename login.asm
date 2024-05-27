@@ -13,7 +13,7 @@ size2 equ $-granted
 failed1 db "Access Denied"
 size3 equ $-failed1
 
-password db "12345"
+password db "slamano"
 
 section .bss
 password_input resb 15
